@@ -1,25 +1,26 @@
-#!/bin/bash
-#animals.sh
-#Joshua Kelley
+#! /bin/bash
+# animals.sh
+# Joshua Kelley
 
-read -p "Enter a animal: " animal
-while [ "$animal" != "Goodbye" ]; do
-    case $animal in
+read -p "Enter an animal (in ALL CAPS): " animal
+
+while [ "$animal" != "GOODBYE" ]; do
+  case $animal in
     TIGER)
-        echo "Wild animal"
-        ;;
+      echo "Wild animal"
+      ;;
     DOG)
-        echo "domestic animal"
-        ;;
+      echo "Domestic animal"
+      ;;
     CAT)
-        echo "domestic animal"
-        ;;
-     *)
-        echo "Unknown animal"
-        ;;
-    esac
-    read -p "Enter a animal or say Goodbye: " animal
-    if [ "$animal" == "Goodbye" ]; then
-        echo "Goodbye."
-    fi
+      echo "Domestic animal"
+      ;;
+    *)
+      echo "Unknown animal"
+      ;;
+  esac
+
+  read -p "Enter an animal or say GOODBYE: " animal
 done
+
+echo "Goodbye."
