@@ -2,7 +2,7 @@
 # animals.sh
 # Joshua Kelley
 
-read -p "Enter an animal (in ALL CAPS): " animal
+read -r -p "Enter an animal (in ALL CAPS): " animal
 
 while [ "$animal" != "GOODBYE" ]; do
   case $animal in
@@ -20,7 +20,7 @@ while [ "$animal" != "GOODBYE" ]; do
       ;;
   esac
 
-  read -p "Enter an animal or say GOODBYE: " animal
+  read -r -p "Enter an animal or say GOODBYE: " animal
 done
 
 echo "Goodbye."
